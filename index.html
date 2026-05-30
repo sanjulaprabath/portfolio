@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sanjula Prabath Kumara | Sakura Samurai Portfolio</title>
+  <meta name="description" content="A cinematic story-style portfolio website for Sanjula Prabath Kumara, Graphic Designer." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700;800&family=Inter:wght@300;400;500;600;700;800&family=Noto+Serif+JP:wght@500;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="./style.css" />
+</head>
+<body data-scene="home">
+  <canvas id="petals" aria-hidden="true"></canvas>
+  <div class="cursor-lantern" aria-hidden="true"></div>
+  <div class="grain" aria-hidden="true"></div>
+
+  <div class="intro" aria-label="Opening animation">
+    <div class="intro-dark"></div>
+    <div class="intro-petal petal-one" aria-hidden="true"></div>
+    <div class="intro-light" aria-hidden="true"></div>
+    <div class="intro-image intro-standing" aria-hidden="true"><img src="./assets/samurai/hero.png" alt="" /></div>
+    <div class="intro-image intro-bowing" aria-hidden="true"><img src="./assets/samurai/bow.png" alt="" /></div>
+    <div class="intro-copy">
+      <h2 class="welcome" aria-label="Welcome"><span>W</span><span>e</span><span>l</span><span>c</span><span>o</span><span>m</span><span>e</span></h2>
+      <h1 class="intro-name">Sanjula Prabath Kumara</h1>
+      <p class="intro-role">Graphic Designer</p>
+      <button class="enter-button magnetic" type="button">Enter the Story</button>
+    </div>
+    <button class="skip-button" type="button">Skip</button>
+  </div>
+
+  <div class="samurai-interface" aria-hidden="true">
+    <div class="scene scene-home active"><img src="./assets/samurai/dawn-bow.png" alt="" /></div>
+    <div class="scene scene-about"><img src="./assets/samurai/morning-walk.png" alt="" /></div>
+    <div class="scene scene-skills"><img src="./assets/samurai/day-stand.png" alt="" /></div>
+    <div class="scene scene-services"><img src="./assets/samurai/afternoon-watch.png" alt="" /></div>
+    <div class="scene scene-work"><img src="./assets/samurai/sunset-sword.png" alt="" /></div>
+    <div class="scene scene-process"><img src="./assets/samurai/afternoon-watch.png" alt="" /></div>
+    <div class="scene scene-contact"><img src="./assets/samurai/night-bow.png" alt="" /></div>
+    <div class="interface-shadow"></div>
+    <div class="moon-glow"></div>
+  </div>
+
+  <header class="topbar">
+    <a href="#home" class="logo"><span>桜</span><b>SPK</b></a>
+    <nav class="nav-links" aria-label="Main navigation">
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#services">Services</a>
+      <a href="#work">Work</a>
+      <a href="#process">Process</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <a href="https://wa.me/94772676288" target="_blank" rel="noreferrer" class="hire magnetic">Hire Me</a>
+  </header>
+
+  <aside class="chapter-rail" aria-label="Story chapters">
+    <a href="#home" data-step="00"><span>The Greeting</span></a>
+    <a href="#about" data-step="01"><span>The Path</span></a>
+    <a href="#skills" data-step="02"><span>Strength</span></a>
+    <a href="#services" data-step="03"><span>Tools</span></a>
+    <a href="#work" data-step="04"><span>Gallery</span></a>
+    <a href="#process" data-step="05"><span>The Way</span></a>
+    <a href="#contact" data-step="06"><span>Final Bow</span></a>
+  </aside>
+
+  <main>
+    <section class="chapter hero" id="home" data-scene="home">
+      <div class="content hero-content">
+        <p class="kicker reveal">Chapter 00 / The Greeting</p>
+        <h1 class="title hero-title reveal"><span>Sanjula</span><span>Prabath Kumara</span></h1>
+        <p class="role reveal">Graphic Designer</p>
+        <p class="lead reveal">A cinematic portfolio journey guided by visual storytelling, premium design, and meaningful creative direction.</p>
+        <div class="actions reveal">
+          <a class="primary magnetic" href="#work">View My Work</a>
+          <a class="secondary magnetic" href="#about">Begin Journey</a>
+        </div>
+      </div>
+      <div class="scroll-cue"><i></i><span>Scroll to begin</span></div>
+    </section>
+
+    <section class="chapter about" id="about" data-scene="about">
+      <div class="content grid about-grid">
+        <div class="section-heading reveal-left">
+          <p class="kicker">Chapter 01 / The Path Begins</p>
+          <h2>About Me</h2>
+          <p>A designer’s path begins with discipline, clarity, and vision.</p>
+        </div>
+        <div class="story-card reveal">
+          <p class="big-copy">I am <strong>Sanjula Prabath Kumara</strong>, a graphic designer focused on creating modern, meaningful, and visually powerful designs.</p>
+          <p>I help brands, creators, and businesses build strong visual identities through thoughtful design, clear storytelling, and premium visual presentation.</p>
+          <div class="mini-grid">
+            <article><b>Creative Focus</b><span>Brand Identity / Social Media / Posters / Digital Layouts</span></article>
+            <article><b>Design Style</b><span>Modern / Cinematic / Premium / Story-driven</span></article>
+            <article><b>Mission</b><span>Turn ideas into visuals that people remember.</span></article>
+          </div>
+        </div>
+        <div class="about-portrait-card reveal-right">
+          <div class="portrait-glow"></div>
+          <img src="./assets/about-portrait.png" alt="Portrait of Sanjula Prabath Kumara" class="about-portrait" />
+          <div class="portrait-caption">
+            <b>Sanjula Prabath Kumara</b>
+            <span>Graphic Designer · Visual Storyteller</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="chapter skills" id="skills" data-scene="skills">
+      <div class="content">
+        <div class="section-heading centered reveal">
+          <p class="kicker">Chapter 02 / The Warrior’s Strength</p>
+          <h2>Skills & Stats</h2>
+          <p>Each skill is treated like a weapon — refined, controlled, and used with purpose.</p>
+        </div>
+        <div class="skills-wrap">
+          <div class="skill-panel reveal-left">
+            <div class="skill-line" data-level="95"><span>Brand Identity Design</span><b>95%</b><i></i></div>
+            <div class="skill-line" data-level="90"><span>Social Media Design</span><b>90%</b><i></i></div>
+            <div class="skill-line" data-level="88"><span>Poster Design</span><b>88%</b><i></i></div>
+            <div class="skill-line" data-level="92"><span>eBook Cover Design</span><b>92%</b><i></i></div>
+            <div class="skill-line" data-level="90"><span>Digital Guide Layout</span><b>90%</b><i></i></div>
+            <div class="skill-line" data-level="85"><span>Creative Direction</span><b>85%</b><i></i></div>
+          </div>
+          <div class="stat-panel reveal-right">
+            <article><strong data-count="100">0</strong><span>Designs Created</span></article>
+            <article><strong data-count="20">0</strong><span>Brand Concepts</span></article>
+            <article><strong data-count="8">0</strong><span>Creative Services</span></article>
+            <article><strong data-count="24">0</strong><span>Hour Response Goal</span></article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="chapter services" id="services" data-scene="services">
+      <div class="content">
+        <div class="section-heading reveal">
+          <p class="kicker">Chapter 03 / The Tools of Creation</p>
+          <h2>Creative Services</h2>
+        </div>
+        <div class="service-grid">
+          <article class="service-card reveal"><span>01</span><h3>Logo Design</h3><p>Memorable marks created with clarity, balance, and strong identity.</p></article>
+          <article class="service-card reveal"><span>02</span><h3>Brand Identity</h3><p>Complete visual systems with colors, typography, and guidelines.</p></article>
+          <article class="service-card reveal"><span>03</span><h3>Social Media Posts</h3><p>Scroll-stopping graphics for brands, creators, and campaigns.</p></article>
+          <article class="service-card reveal"><span>04</span><h3>Poster Design</h3><p>Bold campaign posters with strong hierarchy and atmosphere.</p></article>
+          <article class="service-card reveal"><span>05</span><h3>Flyer Design</h3><p>Clean promotional designs that communicate quickly.</p></article>
+          <article class="service-card reveal"><span>06</span><h3>Business Cards</h3><p>Premium identity cards that feel sharp and professional.</p></article>
+          <article class="service-card reveal"><span>07</span><h3>eBook Covers</h3><p>High-impact digital covers made to attract attention.</p></article>
+          <article class="service-card reveal"><span>08</span><h3>Digital Guide Layout</h3><p>Readable, beautiful layouts for guides, PDFs, and digital products.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="chapter work" id="work" data-scene="work">
+      <div class="content wide">
+        <div class="section-heading reveal">
+          <p class="kicker">Chapter 04 / The Gallery of Battles</p>
+          <h2>Selected Works</h2>
+          <p>Project mockups presented as cinematic visual chapters.</p>
+        </div>
+        <div class="project-grid">
+          <article class="project-card reveal">
+            <a href="./assets/projects/brand-identity.png" target="_blank" rel="noreferrer"><img src="./assets/projects/brand-identity.png" alt="Brand Identity System project mockup" /><em>View Project</em></a>
+            <p>Branding</p><h3>Brand Identity System</h3><small>Logo, stationery, packaging style, color palette, and brand guideline presentation.</small>
+          </article>
+          <article class="project-card reveal">
+            <a href="./assets/projects/social-media.png" target="_blank" rel="noreferrer"><img src="./assets/projects/social-media.png" alt="Social media campaign visual design mockup" /><em>View Project</em></a>
+            <p>Social Media</p><h3>Campaign Visual Design</h3><small>Posts, stories, and campaign visuals for modern digital brand communication.</small>
+          </article>
+          <article class="project-card reveal">
+            <a href="./assets/projects/poster-design.png" target="_blank" rel="noreferrer"><img src="./assets/projects/poster-design.png" alt="Poster design project mockup" /><em>View Project</em></a>
+            <p>Poster Design</p><h3>Event Poster Series</h3><small>High-impact print and campaign poster visuals with strong hierarchy and atmosphere.</small>
+          </article>
+          <article class="project-card reveal">
+            <a href="./assets/projects/ebook-layout.png" target="_blank" rel="noreferrer"><img src="./assets/projects/ebook-layout.png" alt="eBook cover and digital guide layout mockup" /><em>View Project</em></a>
+            <p>eBook / Layout</p><h3>Digital Guide Design</h3><small>eBook cover, interior spread, tablet preview, and mobile reading layout presentation.</small>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="chapter process" id="process" data-scene="process">
+      <div class="content">
+        <div class="section-heading reveal-left">
+          <p class="kicker">Chapter 05 / The Way of Design</p>
+          <h2>Creative Process</h2>
+        </div>
+        <div class="process-path">
+          <article class="process-step reveal"><b>01</b><h3>Observe</h3><p>Understand the client, audience, purpose, and visual direction.</p></article>
+          <article class="process-step reveal"><b>02</b><h3>Concept</h3><p>Build a creative idea, layout direction, and style mood.</p></article>
+          <article class="process-step reveal"><b>03</b><h3>Create</h3><p>Design strong visuals with clean structure and powerful composition.</p></article>
+          <article class="process-step reveal"><b>04</b><h3>Refine</h3><p>Improve details, spacing, colors, hierarchy, and final polish.</p></article>
+          <article class="process-step reveal"><b>05</b><h3>Deliver</h3><p>Prepare final files clearly for professional use and presentation.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="chapter contact" id="contact" data-scene="contact">
+      <div class="content contact-content">
+        <div class="section-heading centered reveal">
+          <p class="kicker">Chapter 06 / The Final Bow</p>
+          <h2>Let’s Create Something Meaningful</h2>
+          <p>Have a project, brand, or creative idea? I’m ready to help you turn it into a powerful visual experience.</p>
+        </div>
+        <div class="contact-grid">
+          <article class="contact-card whatsapp-card reveal-left">
+            <span class="status">Available for freelance projects</span>
+            <h3>Message on WhatsApp</h3>
+            <a class="contact-number" href="https://wa.me/94772676288" target="_blank" rel="noreferrer">0772676288</a>
+            <p>Send your project idea, deadline, and style direction. I’ll reply with the next step.</p>
+            <a class="primary magnetic" href="https://wa.me/94772676288" target="_blank" rel="noreferrer">Open WhatsApp</a>
+          </article>
+          <div class="contact-stack reveal-right">
+            <article><span>Phone</span><a href="tel:0772676288">0772676288</a></article>
+            <article><span>Email</span><a href="mailto:sanjulap414@gmail.com">sanjulap414@gmail.com</a></article>
+            <article><span>Project Brief</span><p>Brand identity, social posts, posters, flyers, eBook covers, or digital guide layouts.</p><a href="mailto:sanjulap414@gmail.com?subject=New%20Design%20Project%20Brief&body=Hi%20Sanjula%2C%0A%0AI%20want%20to%20discuss%20a%20design%20project.%0A%0AProject%20type%3A%0ADeadline%3A%0ABudget%3A%0AStyle%20I%20like%3A%0A%0AThank%20you.">Send Project Details</a></article>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <a class="floating-whatsapp magnetic" href="https://wa.me/94772676288" target="_blank" rel="noreferrer" aria-label="Open WhatsApp">WA</a>
+
+  <footer>
+    <span>© 2026 Sanjula Prabath Kumara. All Rights Reserved.</span>
+    <span>The Sakura Path — A Designer’s Journey</span>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script src="./script.js"></script>
+</body>
+</html>

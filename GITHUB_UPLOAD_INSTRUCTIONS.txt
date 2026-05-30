@@ -1,0 +1,34 @@
+GITHUB PAGES IMAGE FIX
+
+Upload the CONTENTS of this folder directly to your repository root.
+Do NOT upload the folder itself.
+
+Repository root must look exactly like this:
+
+index.html
+style.css
+script.js
+image-test.html
+.nojekyll
+assets/
+  samurai/
+  projects/
+
+After upload, open:
+https://YOUR-USERNAME.github.io/YOUR-REPOSITORY/image-test.html
+
+If image-test.html shows images, the assets are uploaded correctly.
+If image-test.html does NOT show images, the assets folder is missing or in the wrong location.
+
+Common mistakes:
+1. You uploaded only index.html/style.css/script.js and not assets/
+2. You uploaded the whole folder "sakura_samurai_interface" instead of the files inside it
+3. GitHub Pages source is set to /docs while files are in root
+4. Folder/file name case changed (Assets instead of assets)
+5. GitHub cache: wait 2-5 minutes then Ctrl+F5
+
+Correct GitHub Pages settings:
+Settings > Pages > Build and deployment
+Source: Deploy from a branch
+Branch: main
+Folder: /root
